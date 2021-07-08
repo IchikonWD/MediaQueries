@@ -1,0 +1,80 @@
+/* Mobile First template */
+
+* {
+    color: #fff;
+    background-color: black;
+}
+
+.main {}
+
+.header {
+    background-color: #03a9f4;
+    width: 100%;
+}
+
+.hero {
+    background-color: #d22b1f;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.content {
+    background-color: #129a22;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: #673ab7;
+    width: 100%;
+}
+
+.footer {
+    background-color: #616161;
+    width: 100%;
+}
+
+
+/* Border entre los items */
+.header,
+.hero,
+.content,
+.sidebar,
+.footer {
+    box-sizing: border-box;
+    border: 0.14em solid #000;
+    padding: 1.5em;
+}
+
+/* Breakpoint tablet */
+
+@media (min-width: 320px) {
+    .container {
+        flex-direction: row;
+    }
+    .content {
+        width: 60%;
+    }
+    .sidebar {
+        width: 40%;
+    }
+}
+
+/* BreakPoint laptop */
+
+@media (min-width: 760px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .content {
+        width: 57%
+    }
+    .sidebar {
+        width: 37%;
+    }
+}
